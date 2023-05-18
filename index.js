@@ -19,20 +19,28 @@ function handleSubmit(e){                                              // write 
 console.log(handleSubmit)
 
 
-function renderComputerPart (computer){                             //write a function that handles the submision of infromation 
+
+function renderComputerPart (computer){            //write a function that handles the submision of infromation 
 
     let item = document.createElement("li")
+
     item.className ="item"
     item.innerHTML =`
     <div class ="content">
-        
-            <h3>${computer.part}</h3>
-            <p> ${computer.year}</P>
-            <p>$${computer.price}</P>
+        <h3>${computer.part}</h3>
+        <div class="dropdown">
+            <button  class="dropbtn">Year and Price</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Year:${computer.year}</a>
+                <a href="#">$${computer.price}</a>
+               
+            </div>
+        </div>
     </div>
-
+        
+    </div>
         <div class='buttons'>
-            <button id='Remove-item'>x</button>
+            <button id='Remove-item' class="button"> x</button>
         </div>`
     
 //console.log (item)
@@ -45,16 +53,17 @@ item.querySelector('#Remove-item').addEventListener ("click", () => {
 
 
 console.log("click")  
-})
 
-
-
-}
+        
+})}
 
 function getComputers(){
+
     fetch( " http://localhost:3000/Computer")
     .then (res => res.json())                                    // use a fetch to retrive the data from the sever 
     .then (computerData =>computerData.forEach(computer =>  renderComputerPart (computer))) 
+    
+    
 }
 
 function postComputers(computerObj){                           //make a function that handels the post request 
@@ -86,10 +95,33 @@ alert("Are you sure you want to Remove this item?")      //add alert to make sur
 
 }
 
-document.querySelector('form').addEventListener("mouseover", ()=>{ // an event lister that counts the mouseover 
-    console.log("mouseover")
-})
+// document.querySelector("body").addEventListener("mouseover", ()=>{ // an event lister that counts the mouseover 
+// myFunction()})
     
+document.querySelector("body").addEventListener("click", ()=>{ // an event lister that counts the mouseover 
+    myFunction()})
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+//    function toggle (event) {
+//     if (!event.target.matches('.dropbtn')) {
+//       let dropdowns = document.getElementsByClassName("dropdown-content");
+//      
+//       for (i = 0; i < dropdowns.length; i++) {
+//         let openDropdown = dropdowns[i];
+//         if (openDropdown.classList.contains('show')) {
+//           openDropdown.classList.remove('show');
+//         }
+//       }
+//     }
+//   }
+  
+    
+
+
 
 // take information from web page and send post it to the sever 
 

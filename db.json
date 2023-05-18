@@ -1,34 +1,16 @@
 {
-    "computer": [
-      {
-        "part": "RGB lighting",
-        "price": "68.99",
-        "year": "2023",
-        "id": 5
-      },
-      {
-        "part": "CPU",
-        "price": "200",
-        "year": "2000",
-        "id": 6
-      },
-      {
-        "part": "Ram ",
-        "price": "200",
-        "year": "2022",
-        "id": 7
-      },
-      {
-        "part": "power supply",
-        "price": "150",
-        "year": "2023",
-        "id": 8
-      },
-      {
-        "part": "Motherboard ",
-        "price": "220.99",
-        "year": "2023",
-        "id": 9
-      }
-    ]
-  }
+  "computer": [
+    {
+      "part": "CPU",
+      "price": "200",
+      "year": "2022",
+      "id": 1
+    },
+    {
+      "part": "CPU",
+      "price": "300",
+      "year": "2022",
+      "id": 2
+    }
+  ]
+}
