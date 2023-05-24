@@ -52,7 +52,7 @@ HTML, CSS, and JavaScript and will communicate with a public API.
 5. Follow good coding practices. Keep your code DRY (Do not repeat yourself) by
    utilizing functions to abstract repetitive code.
 
-### Stretch Goals
+### Stretch 
 
 1. Use [json-server][] in your project to persist your app's interactivity.
 

@@ -6,7 +6,7 @@
 
   }
   
-  /* Apply styles to the body element */
+ 
   html {
     height: 100%;
     width: 100%;
@@ -17,6 +17,17 @@
     min-height: 100%;
     min-width: 100%;
     background: linear-gradient(blue,black);
+  }
+
+  body.dark-mode{
+    background-color: #333;
+    color: #ffffff;
+  }
+  body.dark-mode h1{
+    color: #ffffff;
+  }
+  body.dark-mode h2{
+    color: #ffffff;
   }
   
   button {
@@ -40,7 +51,7 @@
     margin: 10px;
     border: 1px solid #333;
     background: rgba(255, 255, 255, 0.75);
-    /*padding: 15px 20px 18px 18px;*/
+   
     border-radius: 5px;
     box-shadow: 2px 5px 5px #333;
   }
