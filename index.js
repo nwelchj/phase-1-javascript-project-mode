@@ -4,16 +4,16 @@ document.querySelector('form').addEventListener("submit",handleSubmit)
 function handleSubmit(e){                                              
     e.preventDefault()
     let computerObj = {
-        part: target.part.value,
-        price: target.price.value,   
-        year: target.year.value,
+        part: e.target.part.value,
+        price: e.target.price.value,   
+        year: e.target.year.value,
         
     }
-    renderComputerPart(computerObj)
+    
     postComputers(computerObj)}
 
 function renderComputerPart (computer){            
-    
+   
     let item = document.createElement("li")
 
     item.className ="item"

@@ -16,7 +16,7 @@
   body {
     min-height: 100%;
     min-width: 100%;
-    background: linear-gradient(blue,black);
+   
   }
 
   body.dark-mode{
@@ -24,12 +24,20 @@
     color: #ffffff;
   }
   body.dark-mode h1{
-    color: #ffffff;
+    color: black
   }
   body.dark-mode h2{
-    color: #ffffff;
+    color: black
   }
-  
+ 
+  ul{
+  color: #333;
+   
+  }
+
+
+
+
   button {
     font-size: 7px;
   }
@@ -56,6 +64,10 @@
     box-shadow: 2px 5px 5px #333;
   }
 
+  #list.dark-mode{
+    color: blue
+  }
+
   form {
     padding: 15px;
     display: flex;
@@ -77,7 +89,7 @@
   }
 
   label {
-    color: white;
+   
   }
 
  button{

@@ -1,16 +1,34 @@
 {
   "computer": [
     {
-      "part": "CPU",
+      "part": "Ram ",
       "price": "200",
       "year": "2000",
-      "id": 7
+      "id": 12
     },
     {
-      "part": "CPU",
+      "part": "Ram ",
       "price": "200",
       "year": "2000",
-      "id": 9
+      "id": 13
+    },
+    {
+      "part": "Ram ",
+      "price": "200.99",
+      "year": "2000",
+      "id": 14
+    },
+    {
+      "part": "Ram ",
+      "price": "200.99",
+      "year": "2022",
+      "id": 15
+    },
+    {
+      "part": "Motherboard",
+      "price": "158.99",
+      "year": "2022",
+      "id": 16
     }
   ]
 }

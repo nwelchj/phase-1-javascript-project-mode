@@ -13,7 +13,7 @@ manufacture, and
 
 when these inputs creates a list of parts. the client can
 also, remove items with the remove button that is represented by
-a "x".
+a "x". In the top left conner is a toggle box, when clicked it causes the screen to go into dark-mode.
 
 ## Instructions for Application
 
