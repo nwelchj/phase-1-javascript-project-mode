@@ -87,11 +87,6 @@
   input {
     padding: 5px;
   }
-
-  label {
-   
-  }
-
  button{
     display: flex;
     font-size: 20px;
@@ -126,14 +121,6 @@
   .dropbtn:hover, .dropbtn:focus {
     background-color: red;
   }
-  
-  .dropdown {
-    float: right;
-    position: relative;
-    display: inline-block;
-    
-  }
-  
   .dropdown-content {
     display: none;
     position: absolute;
